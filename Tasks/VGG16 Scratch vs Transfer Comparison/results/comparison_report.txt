@@ -1,0 +1,21 @@
+VGG16 FROM SCRATCH vs IMAGENET TRANSFER LEARNING — COUNTERFEIT MEDICINE DETECTION
+==============================================================================
+WINNER on the test set: VGG16 (ImageNet Transfer)
+  Accuracy  0.998 vs 0.955   F1(Fake) 0.997 vs 0.940   ROC-AUC 1.000 vs 0.988
+  Missed counterfeit medicines (false negatives): 0 vs 5   |  False alarms: 1 vs 15
+  McNemar exact p = 2.098e-05 (significant at 0.05; paired discordant images: 21).
+
+TRAINING BEHAVIOUR
+  Scratch  : 16 epochs, best val-loss epoch 10, train−val accuracy gap +5.4 pts,
+             all 14.9M weights learned from random initialisation.
+  Transfer : 16 epochs, best val-loss epoch 12, train−val accuracy gap +0.1 pts,
+             re-uses ImageNet features; only the head (phase 1) and block5 (phase 2) were trained.
+
+INTERPRETATION
+  * With only a few hundred training images, a 14M+ parameter VGG16 trained from random weights has little data to
+    learn generic edges/textures/shapes from, so it typically converges slower and generalises less well.
+  * ImageNet-pretrained filters already encode those low/mid-level features, so transfer learning usually reaches
+    higher accuracy/AUC faster with a smaller generalisation gap — compare the curves above to confirm for this run.
+  * In pharmaceutical screening a missed fake (false negative) is the costly error: prefer the model with the
+    lower FN count / higher recall, and tune the decision threshold using the F1-vs-threshold curve.
+  * Caveat: single run, single seed, small test set — treat small differences as noise unless McNemar is significant.
