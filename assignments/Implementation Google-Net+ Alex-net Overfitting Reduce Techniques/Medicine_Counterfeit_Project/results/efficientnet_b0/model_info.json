@@ -1,0 +1,22 @@
+{
+    "model_key": "efficientnet_b0",
+    "display_name": "EfficientNet-B0",
+    "pretrained": true,
+    "weights_source": "/root/.keras/models/efficientnetb0_notop.h5",
+    "input_size": [
+        224,
+        224
+    ],
+    "dense_units": 256,
+    "dropout": 0.4,
+    "loss": "binary_focal_loss",
+    "focal_gamma": 2.0,
+    "focal_alpha": 0.25,
+    "learning_rate_phase1": 0.001,
+    "learning_rate_phase2": 1e-05,
+    "epochs_phase1": 15,
+    "epochs_phase2": 20,
+    "frozen_layers_phase2_unfreeze_count": 30,
+    "total_parameters": 4377764,
+    "trainable_parameters_phase1": 328193
+}

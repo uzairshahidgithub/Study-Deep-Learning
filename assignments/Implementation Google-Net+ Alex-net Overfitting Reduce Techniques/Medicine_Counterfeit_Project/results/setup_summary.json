@@ -1,0 +1,54 @@
+{
+    "dataset_handle": "surajkumarjha1/fake-vs-real-medicine-datasets-images",
+    "train_dir": "/root/.cache/kagglehub/datasets/surajkumarjha1/fake-vs-real-medicine-datasets-images/versions/1/dataset/train",
+    "val_dir": "/root/.cache/kagglehub/datasets/surajkumarjha1/fake-vs-real-medicine-datasets-images/versions/1/dataset/val",
+    "test_dir": "/root/.cache/kagglehub/datasets/surajkumarjha1/fake-vs-real-medicine-datasets-images/versions/1/dataset/test",
+    "img_size_default": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "epochs_phase1": 15,
+    "epochs_phase2": 20,
+    "learning_rate_phase1": 0.001,
+    "learning_rate_phase2": 1e-05,
+    "focal_loss": {
+        "gamma": 2.0,
+        "alpha": 0.25
+    },
+    "use_focal_loss": true,
+    "class_names": [
+        "Fake",
+        "Real"
+    ],
+    "class_counts": {
+        "train_fake": 240,
+        "train_real": 422,
+        "val_fake": 167,
+        "val_real": 287,
+        "test_fake": 162,
+        "test_real": 288
+    },
+    "models": {
+        "efficientnet_b0": {
+            "display_name": "EfficientNet-B0",
+            "backbone_fn": "<function EfficientNetB0 at 0x7ef7cabb3060>",
+            "input_size": "(224, 224)",
+            "preprocess_fn": "<function preprocess_input at 0x7ef7cabb3560>",
+            "dropout": "0.4",
+            "dense_units": "256",
+            "frozen_until": "-30",
+            "batch_size": "32"
+        },
+        "mobilenet_v2": {
+            "display_name": "MobileNetV2",
+            "backbone_fn": "<function MobileNetV2 at 0x7ef7cabddc60>",
+            "input_size": "(224, 224)",
+            "preprocess_fn": "<function preprocess_input at 0x7ef7cabdde40>",
+            "dropout": "0.3",
+            "dense_units": "128",
+            "frozen_until": "-20",
+            "batch_size": "32"
+        }
+    }
+}

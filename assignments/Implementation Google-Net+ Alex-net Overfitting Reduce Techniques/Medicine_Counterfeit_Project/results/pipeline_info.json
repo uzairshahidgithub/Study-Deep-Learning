@@ -1,0 +1,30 @@
+{
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "class_names": [
+        "Fake",
+        "Real"
+    ],
+    "class_index_mapping": {
+        "Fake": 0,
+        "Real": 1
+    },
+    "batches_per_epoch": {
+        "train": 21,
+        "val": 15,
+        "test": 15
+    },
+    "augmentation_layers": [
+        "RandomFlip(horizontal)",
+        "RandomRotation(0.05)",
+        "RandomZoom(0.10)",
+        "RandomBrightness(0.10, value_range=[0,1])",
+        "RandomContrast(0.10, value_range=[0,1])",
+        "RandomSaturation(0.15)"
+    ],
+    "preprocessing_inside_model": "Rescaling(1/255) -> [0,1] then Rescaling(2,-1) -> [-1,1]",
+    "label_mode": "binary"
+}
