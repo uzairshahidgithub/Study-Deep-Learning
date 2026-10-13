@@ -1,8 +1,8 @@
 # Study-Deep-Learning
 
-> An academic study repository dedicated to the theory, mathematics, and practice of Deep Learning — maintained in the spirit of open, reproducible research.
+> An academic study repository dedicated to the theory, mathematics, and practice of Deep Learning, maintained in the spirit of open, reproducible research.
 
-A collaborative Deep Learning repository led by **Dr. Maria Tariq**, maintained by **Muhammad Uzair (129)**. This repository blends academic theory with hands-on practice: structured notes, implementations, notebooks, projects, and open peer collaboration. No prerequisites — only curiosity and a willingness to learn.
+A collaborative Deep Learning repository led by **Dr. Maria Tariq**, maintained by **Muhammad Uzair (129)**. This repository blends academic theory with hands-on practice: structured notes, implementations, notebooks, projects, and open peer collaboration. No prerequisites, only curiosity and a willingness to learn.
 
 ---
 
@@ -21,10 +21,10 @@ A collaborative Deep Learning repository led by **Dr. Maria Tariq**, maintained 
 
 This repository serves as a **structured academic portfolio and knowledge base** for the study of Deep Learning. Its objectives are to:
 
-- **Build theoretical depth** — consolidate the mathematics, notation, and core concepts underlying modern deep learning architectures.
-- **Develop practical fluency** — implement models from scratch and with established frameworks to bridge the gap between theory and practice.
-- **Encourage reproducible research** — document methods, datasets, and results so that experiments can be independently verified and extended.
-- **Foster open collaboration** — invite peers to review, critique, and contribute to a shared body of learning.
+- **Build theoretical depth:** consolidate the mathematics, notation, and core concepts underlying modern deep learning architectures.
+- **Develop practical fluency:** implement models from scratch and with established frameworks to bridge the gap between theory and practice.
+- **Encourage reproducible research:** document methods, datasets, and results so that experiments can be independently verified and extended.
+- **Foster open collaboration:** invite peers to review, critique, and contribute to a shared body of learning.
 
 ---
 
@@ -54,7 +54,7 @@ Substantial, end-to-end implementations that integrate multiple concepts into a 
 - Documentation and reproducible setup
 
 ### 4. Case Study and Research
-An in-depth exploration of the research landscape — reading, summarizing, and critically analyzing seminal and contemporary work in deep learning.
+An in-depth exploration of the research landscape, involving reading, summarizing, and critically analyzing seminal and contemporary work in deep learning.
 
 - Paper summaries and literature reviews
 - Critical analyses of methods and results
